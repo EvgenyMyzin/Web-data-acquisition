@@ -95,12 +95,12 @@ class ParsingHH:
             return f'Other error occurred: {pymongo.errors}'
         return f'\nДобавлено  новый вакансий {number_of_new_vacancy}\nУдалено закрытых вакансий {number_of_closed_vacancy}\n'
 
-    def set_client_Mongo(self, database = 'database', collection = 'collection'):
-        """"Метод подключения к базе данных"""
-        self.database = database
-        self.collection = collection
-        self.db = self.client[database]
-        self.collections = self.db[collection]
+    # def set_client_Mongo(self, database = 'database', collection = 'collection'):
+    #     """"Метод подключения к базе данных"""
+    #     self.database = database
+    #     self.collection = collection
+    #     self.db = self.client[database]
+    #     self.collections = self.db[collection]
 
     def get_vacancy_info(self, vacancy):
         """Метод заполнения данными о вакансии"""
